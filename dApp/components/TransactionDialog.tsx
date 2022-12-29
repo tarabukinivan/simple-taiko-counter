@@ -48,7 +48,7 @@ const TransactionDialog: React.FC<Props> = ({ hash, onClose }) => {
               View on explorer
             </a>
           </div>
-          <Dialog.Close>
+          <Dialog.Close asChild>
             <button
               className="absolute inline-flex items-center justify-center w-6 h-6 text-base text-gray-400 bg-transparent rounded-full hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white top-3 right-3"
               aria-label="Close"

@@ -1,7 +1,6 @@
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Web3Button } from "@web3modal/react";
-import { BigNumber } from "ethers";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import {
@@ -43,11 +42,6 @@ export default function HomePage() {
   const { config } = usePrepareContractWrite({
     address: contractAddress,
     abi,
-    args: [
-      {
-        gasLimit: BigNumber.from(500_000),
-      },
-    ],
     functionName: "incrementCounter",
   });
 
