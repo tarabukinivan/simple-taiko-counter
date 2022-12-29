@@ -29,7 +29,7 @@ const TransactionDialog: React.FC<Props> = ({ hash, onClose }) => {
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-gray-900 bg-opacity-60 animate-overlay-show" />
         <Dialog.Content className="bg-white dark:bg-gray-700 rounded-[6px] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[450px] max-h-[85vh] shadow focus:outline-none animate-content-show">
-          <div className="px-6 pt-6 pb-2 text-center">
+          <div className="px-6 pt-6 pb-6 text-center">
             <FontAwesomeIcon
               icon={faSpinner}
               spin
